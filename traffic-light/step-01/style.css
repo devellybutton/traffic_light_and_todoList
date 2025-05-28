@@ -1,0 +1,50 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.traffic-container {
+  background-color: #4169e1; /* royalblue */
+  border-radius: 30px;
+  padding: 40px 60px;
+  display: flex;
+  gap: 40px;
+}
+
+/* 신호등에 불 안 들어올 때 */
+.light {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+}
+
+.red {
+  background-color: #ffcccc;
+}
+.yellow {
+  background-color: #ffffcc;
+}
+.green {
+  background-color: #ccffcc;
+}
+
+/* 신호등에 불 들어올 때 */
+.light.red.focus {
+  background-color: red;
+  box-shadow: 0 0 20px red;
+}
+
+.light.yellow.focus {
+  background-color: yellow;
+  box-shadow: 0 0 20px yellow;
+}
+
+.light.green.focus {
+  background-color: green;
+  box-shadow: 0 0 20px green;
+}
